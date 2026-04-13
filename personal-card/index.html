@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>个人信息卡片</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="page-title">个人信息卡片</h1>
+
+  <div class="card">
+    <div class="avatar-wrapper">
+      <img id="avatar" alt="头像" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><rect width='100%' height='100%' fill='%23e6eef8'/><circle cx='100' cy='70' r='50' fill='%23cfdff4'/><rect x='40' y='120' width='120' height='50' rx='8' fill='%23cfdff4'/></svg>">
+      <label class="upload-label">更换头像<input id="avatarInput" type="file" accept="image/*"></label>
+    </div>
+
+    <h2 id="nameDisplay">你的姓名</h2>
+    <p id="bioDisplay">简短个人简介会显示在这里。</p>
+
+    <div class="form">
+      <input id="nameInput" type="text" placeholder="输入姓名">
+      <textarea id="bioInput" rows="3" placeholder="输入个人简介"></textarea>
+      <button id="saveBtn">保存</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

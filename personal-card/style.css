@@ -1,0 +1,23 @@
+/* 基本布局 */
+:root{--card-bg:#fff;--muted:#6b7280;--accent:#3466ff}
+*{box-sizing:border-box}
+body{font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial;color:#222;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;margin:0;background:#f3f6fb;padding:32px}
+.page-title{margin:0 0 18px;font-size:20px;color:#111}
+.card{background:var(--card-bg);padding:24px 28px;border-radius:12px;box-shadow:0 8px 30px rgba(15,23,42,0.08);text-align:center;max-width:360px;width:100%}
+
+.avatar-wrapper{display:flex;flex-direction:column;align-items:center;gap:10px;margin-bottom:10px}
+#avatar{width:100px;height:100px;border-radius:50%;object-fit:cover;border:4px solid #fff;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+.upload-label{font-size:13px;color:var(--muted);cursor:pointer;display:inline-block}
+.upload-label input{display:none}
+
+h2{margin:10px 0 6px;font-size:18px}
+p{margin:0 0 14px;color:var(--muted)}
+
+.form{display:flex;flex-direction:column;gap:8px}
+input[type="text"],textarea{width:100%;padding:10px 12px;border-radius:8px;border:1px solid #e6e9ef;background:#fbfdff;font-size:14px;resize:vertical}
+input[type="text"]:focus,textarea:focus{outline:none;border-color:rgba(52,102,255,0.25);box-shadow:0 6px 18px rgba(52,102,255,0.06)}
+
+button{padding:10px 14px;border-radius:10px;border:none;background:var(--accent);color:#fff;font-weight:600;cursor:pointer;transition:transform .12s ease,box-shadow .12s}
+button:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(52,102,255,0.16)}
+
+@media (max-width:420px){.card{padding:18px}}
